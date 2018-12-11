@@ -1,0 +1,111 @@
+{
+  "lists": [
+    {
+      "u": [
+        {
+          "fd": "https://github.com/sharkdp/fd"
+        },
+        {
+          "boom": "https://github.com/holman/boom"
+        },
+        {
+          "bd": "https://github.com/vigneshwaranr/bd"
+        },
+        {
+          "awesome-shell": "https://github.com/alebcay/awesome-shell"
+        },
+        {
+          "has": "https://github.com/kdabir/has"
+        },
+        {
+          "how2": "https://github.com/santinic/how2"
+        },
+        {
+          "googler": "https://github.com/jarun/googler"
+        },
+        {
+          "hstr(hh)": "https://github.com/dvorka/hstr"
+        },
+        {
+          "tldr": "https://github.com/raylee/tldr"
+        },
+        {
+          "rebound": "https://github.com/shobrook/rebound"
+        },
+        {
+          "ansiweather": "https://github.com/fcambus/ansiweather"
+        },
+        {
+          "trash": "https://github.com/morgant/tools-osx"
+        },
+        {
+          "with": "https://github.com/morgant/tools-osx"
+        },
+        {
+          "preview": "https://github.com/cccaldas/bash/blob/master/preview"
+        },
+        {
+          "wiki": "https://github.com/vasi/osxutils/blob/master/wiki/wiki"
+        },
+        {
+          "duti": "https://github.com/moretension/duti"
+        },
+        {
+          "ack": "https://beyondgrep.com/why-ack/"
+        },
+        {
+          ".ackrc": "https://gist.github.com/kevinold/4749656"
+        },
+        {
+          "bat": "https://github.com/sharkdp/bat"
+        },
+        {
+          "cmus": "https://github.com/cmus/cmus/blob/master/Doc/cmus-tutorial.txt"
+        },
+        {
+          "awesome-mac": "https://github.com/jaywcjlove/awesome-mac"
+        },
+        {
+          "ag": "https://github.com/ggreer/the_silver_searcher"
+        },
+        {
+          "fzf": "https://github.com/junegunn/fzf#using-homebrew-or-linuxbrew"
+        },
+        {
+          "rg": "https://github.com/BurntSushi/ripgrep"
+        }
+      ]
+    },
+    {
+      "sh": [
+        {
+          "1": "find . | wc -l   -> remove the number of files in the current directory (always subtract . and .DS_Store)"
+        },
+        {
+          "2": "cut -d -f 1 your_file | sort | uniq   -> remove duplicate entries in a file"
+        },
+        {
+          "3": "echo 1023| xargs -I % sh -c 'netstat -vanp tcp |grep %' | sed -n 1p | awk '{print $9}'  -> find the PID of the process that occupies the port 1023"
+        },
+        {
+          "4": "python -c 'import random; print(random.randint(0,1000000-1))'  -> generate a random 6-digit number"
+        },
+        {
+          "5": "rh() { rg  ~/.bash_history }; rh  -> Very fast history search with Ripgrep"
+        },
+        {
+          "6": "lsof / | awk '{ if( > 1048576) print /1048576 MB       }' | sort -n -u | tail  -> Show 10 Largest Open Files"
+        },
+        {
+          "7": "curl -s http://pasta.phyrama.com:8083/cgi-bin/live.exe | grep -Eo '^<li>.*</li>' | gshuf -n 1 | sed s,\\<li\\>,,g | sed s,\\</li\\>,,g -> generate corporate bullshit"
+        },
+        {
+          "8": "git commit -m \"$(w3m whatthecommit.com | head -n 1)\" -> generate random commit"
+        },
+        {
+          "9": "mkcd(){ NAME=$1; mkdir -p \"$NAME\"; cd \"$NAME\"; } -> make a new folder and cd into it"
+        }
+      ]
+    }
+  ]
+}
